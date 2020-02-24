@@ -26,566 +26,568 @@
   - Each player will have a placement board, and a scanning board. The placement board is the board that contains all of that players ships, and what the view of their board curretnly looks like. The scanning board is used to select where to fire at, and show the curent player all of the spots that they have either fired at and hit, fired at and missed, or have not yet fired at.
 
 ## Gameplay Sample
-Enter one of ['Human', 'CheatingAi', 'SearchDestroyAi', 'RandomAi'] for Player 1's type: Human
-Player 1 please enter your name: Rick
-Rick's Placement Board
-  0 1 2 3 4 5
-0 * * * * * *
-1 * * * * * *
-2 * * * * * *
-3 * * * * * *
-4 * * * * * *
-Rick enter horizontal or vertical for the orientation of Patrol which is 2 long: hor
-Rick, enter the starting position for your Patrol ship ,which is 2 long, in the form row, column: 0,0
-Rick's Placement Board
-  0 1 2 3 4 5
-0 P P * * * *
-1 * * * * * *
-2 * * * * * *
-3 * * * * * *
-4 * * * * * *
-Rick enter horizontal or vertical for the orientation of Submarine which is 3 long: ver
-Rick, enter the starting position for your Submarine ship ,which is 3 long, in the form row, column: 5,2
-Cannot place Submarine vertically at 5, 2 because it would be out of bounds.
-Rick enter horizontal or vertical for the orientation of Submarine which is 3 long: hor
-Rick, enter the starting position for your Submarine ship ,which is 3 long, in the form row, column: 4,0
-Rick's Placement Board
-  0 1 2 3 4 5
-0 P P * * * *
-1 * * * * * *
-2 * * * * * *
-3 * * * * * *
-4 S S S * * *
-Enter one of ['Human', 'CheatingAi', 'SearchDestroyAi', 'RandomAi'] for Player 2's type: search
-Search Destroy AI 2's Placement Board
-  0 1 2 3 4 5
-0 * * * * * *
-1 * * * * * *
-2 * * * * * *
-3 * * * * * *
-4 * * * * * *
-Search Destroy AI 2's Placement Board
-  0 1 2 3 4 5
-0 * * * P * *
-1 * * * P * *
-2 * * * * * *
-3 * * * * * *
-4 * * * * * *
-Search Destroy AI 2's Placement Board
-  0 1 2 3 4 5
-0 * * * P * *
-1 * * * P * *
-2 * * S * * *
-3 * * S * * *
-4 * * S * * *
-Rick's Scanning Board
-  0 1 2 3 4 5
-0 * * * * * *
-1 * * * * * *
-2 * * * * * *
-3 * * * * * *
-4 * * * * * *
+Enter one of ['Human', 'CheatingAi', 'SearchDestroyAi', 'RandomAi'] for Player 1's type: Human   
+Player 1 please enter your name: Rick   
+Rick's Placement Board   
+  0 1 2 3 4 5   
+0 * * * * * *   
+1 * * * * * *  
+2 * * * * * *  
+3 * * * * * *  
+4 * * * * * *  
+Rick enter horizontal or vertical for the orientation of Patrol which is 2 long: hor  
+Rick, enter the starting position for your Patrol ship ,which is 2 long, in the form row, column: 0,0  
+Rick's Placement Board  
+  0 1 2 3 4 5  
+0 P P * * * *  
+1 * * * * * *  
+2 * * * * * *  
+3 * * * * * *  
+4 * * * * * *  
+Rick enter horizontal or vertical for the orientation of Submarine which is 3 long: ver  
+Rick, enter the starting position for your Submarine ship ,which is 3 long, in the form row, column: 5,2  
+Cannot place Submarine vertically at 5, 2 because it would be out of bounds.  
+Rick enter horizontal or vertical for the orientation of Submarine which is 3 long: hor  
+Rick, enter the starting position for your Submarine ship ,which is 3 long, in the form row, column: 4,0  
+Rick's Placement Board  
+  0 1 2 3 4 5  
+0 P P * * * *  
+1 * * * * * *  
+2 * * * * * *  
+3 * * * * * *  
+4 S S S * * *  
+Enter one of ['Human', 'CheatingAi', 'SearchDestroyAi', 'RandomAi'] for Player 2's type: search  
+Search Destroy AI 2's Placement Board  
+  0 1 2 3 4 5  
+0 * * * * * *  
+1 * * * * * *  
+2 * * * * * *  
+3 * * * * * *  
+4 * * * * * *  
+Search Destroy AI 2's Placement Board  
+  0 1 2 3 4 5  
+0 * * * P * *  
+1 * * * P * *  
+2 * * * * * *  
+3 * * * * * *  
+4 * * * * * *  
+Search Destroy AI 2's Placement Board  
+  0 1 2 3 4 5  
+0 * * * P * *  
+1 * * * P * *  
+2 * * S * * *  
+3 * * S * * *  
+4 * * S * * *  
+Rick's Scanning Board  
+  0 1 2 3 4 5  
+0 * * * * * *  
+1 * * * * * *  
+2 * * * * * *  
+3 * * * * * *  
+4 * * * * * *  
+  
+Rick's Board  
+  0 1 2 3 4 5  
+0 P P * * * *  
+1 * * * * * *  
+2 * * * * * *  
+3 * * * * * *  
+4 S S S * * *  
+  
+Rick, enter the location you want to fire at in the form row, column: 0,0  
+Miss  
+Rick's Scanning Board  
+  0 1 2 3 4 5  
+0 O * * * * *  
+1 * * * * * *  
+2 * * * * * *  
+3 * * * * * *  
+4 * * * * * *  
+  
+Rik's Board  
+  0 1 2 3 4 5  
+0 P P * * * *  
+1 * * * * * *  
+2 * * * * * *  
+3 * * * * * *  
+4 S S S * * *  
+  
+Search Destroy AI 2's Scanning Board  
+  0 1 2 3 4 5  
+0 * * * * * *  
+1 * * * * * *  
+2 * * * * * *  
+3 * * * * * *  
+4 * * * * * *  
+  
+Search Destroy AI 2's Board  
+  0 1 2 3 4 5  
+0 O * * P * *  
+1 * * * P * *  
+2 * * S * * *  
+3 * * S * * *  
+4 * * S * * *  
+  
+Miss  
+Search Destroy AI 2's Scanning Board  
+  0 1 2 3 4 5  
+0 * * * * * *  
+1 * * O * * *  
+2 * * * * * *  
+3 * * * * * *  
+4 * * * * * *  
+  
+Search Destroy AI 2's Board  
+  0 1 2 3 4 5  
+0 O * * P * *  
+1 * * * P * *  
+2 * * S * * *  
+3 * * S * * *  
+4 * * S * * *  
+  
+Rick's Scanning Board  
+  0 1 2 3 4 5  
+0 O * * * * *  
+1 * * * * * *  
+2 * * * * * *  
+3 * * * * * *  
+4 * * * * * *  
+  
+Rick's Board  
+  0 1 2 3 4 5  
+0 P P * * * *  
+1 * * O * * *  
+2 * * * * * *  
+3 * * * * * *  
+4 S S S * * *  
+  
+Rick, enter the location you want to fire at in the form row, column: 3,0  
+Miss  
+Rick's Scanning Board  
+  0 1 2 3 4 5  
+0 O * * * * *  
+1 * * * * * *  
+2 * * * * * *  
+3 O * * * * *  
+4 * * * * * *  
+  
+Rick's Board  
+  0 1 2 3 4 5  
+0 P P * * * *  
+1 * * O * * *  
+2 * * * * * *  
+3 * * * * * *  
+4 S S S * * *  
+  
+Search Destroy AI 2's Scanning Board  
+  0 1 2 3 4 5  
+0 * * * * * *  
+1 * * O * * *  
+2 * * * * * *  
+3 * * * * * *  
+4 * * * * * *  
+  
+Search Destroy AI 2's Board  
+  0 1 2 3 4 5  
+0 O * * P * *  
+1 * * * P * *  
+2 * * S * * *  
+3 O * S * * *  
+4 * * S * * *  
+  
+Miss  
+Search Destroy AI 2's Scanning Board  
+  0 1 2 3 4 5  
+0 * * * * * *  
+1 * * O * * *  
+2 * * * * * O  
+3 * * * * * *  
+4 * * * * * *  
+  
+Search Destroy AI 2's Board  
+  0 1 2 3 4 5  
+0 O * * P * *  
+1 * * * P * *  
+2 * * S * * *  
+3 O * S * * *  
+4 * * S * * *  
+  
+Rick's Scanning Board  
+  0 1 2 3 4 5  
+0 O * * * * *  
+1 * * * * * *  
+2 * * * * * *  
+3 O * * * * *  
+4 * * * * * *  
+  
+Rick's Board  
+  0 1 2 3 4 5  
+0 P P * * * *  
+1 * * O * * *  
+2 * * * * * O  
+3 * * * * * *  
+4 S S S * * *  
+  
+Rick, enter the location you want to fire at in the form row, column: 3,1  
+Miss  
+Rick's Scanning Board  
+  0 1 2 3 4 5  
+0 O * * * * *  
+1 * * * * * *  
+2 * * * * * *  
+3 O O * * * *  
+4 * * * * * *  
+  
+Rick's Board  
+  0 1 2 3 4 5  
+0 P P * * * *  
+1 * * O * * *  
+2 * * * * * O  
+3 * * * * * *  
+4 S S S * * *  
+  
+Search Destroy AI 2's Scanning Board  
+  0 1 2 3 4 5  
+0 * * * * * *  
+1 * * O * * *  
+2 * * * * * O  
+3 * * * * * *  
+4 * * * * * *  
+  
+Search Destroy AI 2's Board  
+  0 1 2 3 4 5  
+0 O * * P * *  
+1 * * * P * *  
+2 * * S * * *  
+3 O O S * * *  
+4 * * S * * *  
+  
+Miss  
+Search Destroy AI 2's Scanning Board  
+  0 1 2 3 4 5  
+0 * * * * * *  
+1 * * O * * *  
+2 * O * * * O  
+3 * * * * * *  
+4 * * * * * *  
+  
+Search Destroy AI 2's Board  
+  0 1 2 3 4 5  
+0 O * * P * *  
+1 * * * P * *  
+2 * * S * * *  
+3 O O S * * *  
+4 * * S * * *  
+  
+Rick's Scanning Board  
+  0 1 2 3 4 5  
+0 O * * * * *  
+1 * * * * * *  
+2 * * * * * *  
+3 O O * * * *  
+4 * * * * * *  
+  
+Rick's Board  
+  0 1 2 3 4 5  
+0 P P * * * *  
+1 * * O * * *  
+2 * O * * * O  
+3 * * * * * *  
+4 S S S * * *  
+  
+Rick, enter the location you want to fire at in the form row, column: 2,2  
+You hit Search Destroy AI 2's Submarine!  
+Rick's Scanning Board  
+  0 1 2 3 4 5  
+0 O * * * * *  
+1 * * * * * *  
+2 * * X * * *  
+3 O O * * * *  
+4 * * * * * *  
+  
+Rick's Board  
+  0 1 2 3 4 5  
+0 P P * * * *  
+1 * * O * * *  
+2 * O * * * O  
+3 * * * * * *  
+4 S S S * * *  
+  
+Search Destroy AI 2's Scanning Board  
+  0 1 2 3 4 5  
+0 * * * * * *  
+1 * * O * * *  
+2 * O * * * O  
+3 * * * * * *  
+4 * * * * * *  
+  
+Search Destroy AI 2's Board  
+  0 1 2 3 4 5  
+0 O * * P * *  
+1 * * * P * *  
+2 * * X * * *  
+3 O O S * * *  
+4 * * S * * *  
+  
+Miss  
+Search Destroy AI 2's Scanning Board  
+  0 1 2 3 4 5  
+0 * * * * * *  
+1 * * O * * *  
+2 * O O * * O  
+3 * * * * * *  
+4 * * * * * *  
+  
+Search Destroy AI 2's Board  
+  0 1 2 3 4 5  
+0 O * * P * *  
+1 * * * P * *  
+2 * * X * * *  
+3 O O S * * *  
+4 * * S * * *  
+  
+Rick's Scanning Board  
+  0 1 2 3 4 5  
+0 O * * * * *  
+1 * * * * * *  
+2 * * X * * *  
+3 O O * * * *  
+4 * * * * * *  
+  
+Rick's Board  
+  0 1 2 3 4 5  
+0 P P * * * *  
+1 * * O * * *  
+2 * O O * * O  
+3 * * * * * *  
+4 S S S * * *  
+  
+Rick, enter the location you want to fire at in the form row, column: 3,2  
+You hit Search Destroy AI 2's Submarine!  
+Rick's Scanning Board  
+  0 1 2 3 4 5  
+0 O * * * * *  
+1 * * * * * *  
+2 * * X * * *  
+3 O O X * * *  
+4 * * * * * *  
+  
+Rick's Board  
+  0 1 2 3 4 5  
+0 P P * * * *  
+1 * * O * * *  
+2 * O O * * O  
+3 * * * * * *  
+4 S S S * * *  
+  
+Search Destroy AI 2's Scanning Board  
+  0 1 2 3 4 5  
+0 * * * * * *  
+1 * * O * * *  
+2 * O O * * O  
+3 * * * * * *  
+4 * * * * * *  
+  
+Search Destroy AI 2's Board  
+  0 1 2 3 4 5  
+0 O * * P * *  
+1 * * * P * *  
+2 * * X * * *  
+3 O O X * * *  
+4 * * S * * *  
+  
+Miss  
+Search Destroy AI 2's Scanning Board  
+  0 1 2 3 4 5  
+0 * * * * * *  
+1 * * O * * *  
+2 * O O * * O  
+3 * * * * * O  
+4 * * * * * *  
+  
+Search Destroy AI 2's Board  
+  0 1 2 3 4 5  
+0 O * * P * *  
+1 * * * P * *  
+2 * * X * * *  
+3 O O X * * *  
+4 * * S * * *  
+  
+Rick's Scanning Board  
+  0 1 2 3 4 5  
+0 O * * * * *  
+1 * * * * * *  
+2 * * X * * *  
+3 O O X * * *  
+4 * * * * * *  
+  
+Rick's Board  
+  0 1 2 3 4 5  
+0 P P * * * *  
+1 * * O * * *  
+2 * O O * * O  
+3 * * * * * O  
+4 S S S * * *  
+  
+Rick, enter the location you want to fire at in the form row, column: 4,2  
+You hit Search Destroy AI 2's Submarine!  
+You destroyed Search Destroy AI 2's Submarine  
+Rick's Scanning Board  
+  0 1 2 3 4 5  
+0 O * * * * *  
+1 * * * * * *  
+2 * * X * * *  
+3 O O X * * *  
+4 * * X * * *  
+  
+Rick's Board  
+  0 1 2 3 4 5  
+0 P P * * * *  
+1 * * O * * *  
+2 * O O * * O  
+3 * * * * * O  
+4 S S S * * *  
+  
+Search Destroy AI 2's Scanning Board  
+  0 1 2 3 4 5  
+0 * * * * * *  
+1 * * O * * *  
+2 * O O * * O  
+3 * * * * * O  
+4 * * * * * *  
+  
+Search Destroy AI 2's Board  
+  0 1 2 3 4 5  
+0 O * * P * *  
+1 * * * P * *  
+2 * * X * * *  
+3 O O X * * *  
+4 * * X * * *  
+  
+You hit Rick's Patrol!  
+Search Destroy AI 2's Scanning Board  
+  0 1 2 3 4 5  
+0 * X * * * *  
+1 * * O * * *  
+2 * O O * * O  
+3 * * * * * O  
+4 * * * * * *  
+  
+Search Destroy AI 2's Board  
+  0 1 2 3 4 5  
+0 O * * P * *  
+1 * * * P * *  
+2 * * X * * *  
+3 O O X * * *  
+4 * * X * * *  
+  
+Rick's Scanning Board  
+  0 1 2 3 4 5  
+0 O * * * * *  
+1 * * * * * *  
+2 * * X * * *  
+3 O O X * * *  
+4 * * X * * *  
+  
+Rick's Board  
+  0 1 2 3 4 5  
+0 P X * * * *  
+1 * * O * * *  
+2 * O O * * O  
+3 * * * * * O  
+4 S S S * * *  
+  
+Rick, enter the location you want to fire at in the form row, column: 0,3  
+You hit Search Destroy AI 2's Patrol!  
+Rick's Scanning Board  
+  0 1 2 3 4 5  
+0 O * * X * *  
+1 * * * * * *  
+2 * * X * * *  
+3 O O X * * *  
+4 * * X * * *  
+  
+Rick's Board  
+  0 1 2 3 4 5  
+0 P X * * * *  
+1 * * O * * *  
+2 * O O * * O  
+3 * * * * * O  
+4 S S S * * *  
+  
+Search Destroy AI 2's Scanning Board  
+  0 1 2 3 4 5  
+0 * X * * * *  
+1 * * O * * *  
+2 * O O * * O  
+3 * * * * * O  
+4 * * * * * *  
+  
+Search Destroy AI 2's Board  
+  0 1 2 3 4 5  
+0 O * * X * *  
+1 * * * P * *  
+2 * * X * * *  
+3 O O X * * *  
+4 * * X * * *  
+  
+You hit Rick's Patrol!  
+You destroyed Rick's Patrol  
+Search Destroy AI 2's Scanning Board  
+  0 1 2 3 4 5  
+0 X X * * * *  
+1 * * O * * *  
+2 * O O * * O  
+3 * * * * * O  
+4 * * * * * *  
 
-Rick's Board
-  0 1 2 3 4 5
-0 P P * * * *
-1 * * * * * *
-2 * * * * * *
-3 * * * * * *
-4 S S S * * *
-
-Rick, enter the location you want to fire at in the form row, column: 0,0
-Miss
-Rick's Scanning Board
-  0 1 2 3 4 5
-0 O * * * * *
-1 * * * * * *
-2 * * * * * *
-3 * * * * * *
-4 * * * * * *
-
-Rick's Board
-  0 1 2 3 4 5
-0 P P * * * *
-1 * * * * * *
-2 * * * * * *
-3 * * * * * *
-4 S S S * * *
-
-Search Destroy AI 2's Scanning Board
-  0 1 2 3 4 5
-0 * * * * * *
-1 * * * * * *
-2 * * * * * *
-3 * * * * * *
-4 * * * * * *
-
-Search Destroy AI 2's Board
-  0 1 2 3 4 5
-0 O * * P * *
-1 * * * P * *
-2 * * S * * *
-3 * * S * * *
-4 * * S * * *
-
-Miss
-Search Destroy AI 2's Scanning Board
-  0 1 2 3 4 5
-0 * * * * * *
-1 * * O * * *
-2 * * * * * *
-3 * * * * * *
-4 * * * * * *
-
-Search Destroy AI 2's Board
-  0 1 2 3 4 5
-0 O * * P * *
-1 * * * P * *
-2 * * S * * *
-3 * * S * * *
-4 * * S * * *
-
-Rick's Scanning Board
-  0 1 2 3 4 5
-0 O * * * * *
-1 * * * * * *
-2 * * * * * *
-3 * * * * * *
-4 * * * * * *
-
-Rick's Board
-  0 1 2 3 4 5
-0 P P * * * *
-1 * * O * * *
-2 * * * * * *
-3 * * * * * *
-4 S S S * * *
-
-Rick, enter the location you want to fire at in the form row, column: 3,0
-Miss
-Rick's Scanning Board
-  0 1 2 3 4 5
-0 O * * * * *
-1 * * * * * *
-2 * * * * * *
-3 O * * * * *
-4 * * * * * *
-
-Rick's Board
-  0 1 2 3 4 5
-0 P P * * * *
-1 * * O * * *
-2 * * * * * *
-3 * * * * * *
-4 S S S * * *
-
-Search Destroy AI 2's Scanning Board
-  0 1 2 3 4 5
-0 * * * * * *
-1 * * O * * *
-2 * * * * * *
-3 * * * * * *
-4 * * * * * *
-
-Search Destroy AI 2's Board
-  0 1 2 3 4 5
-0 O * * P * *
-1 * * * P * *
-2 * * S * * *
-3 O * S * * *
-4 * * S * * *
-
-Miss
-Search Destroy AI 2's Scanning Board
-  0 1 2 3 4 5
-0 * * * * * *
-1 * * O * * *
-2 * * * * * O
-3 * * * * * *
-4 * * * * * *
-
-Search Destroy AI 2's Board
-  0 1 2 3 4 5
-0 O * * P * *
-1 * * * P * *
-2 * * S * * *
-3 O * S * * *
-4 * * S * * *
-
-Rick's Scanning Board
-  0 1 2 3 4 5
-0 O * * * * *
-1 * * * * * *
-2 * * * * * *
-3 O * * * * *
-4 * * * * * *
-
-Rick's Board
-  0 1 2 3 4 5
-0 P P * * * *
-1 * * O * * *
-2 * * * * * O
-3 * * * * * *
-4 S S S * * *
-
-Rick, enter the location you want to fire at in the form row, column: 3,1
-Miss
-Rick's Scanning Board
-  0 1 2 3 4 5
-0 O * * * * *
-1 * * * * * *
-2 * * * * * *
-3 O O * * * *
-4 * * * * * *
-
-Rick's Board
-  0 1 2 3 4 5
-0 P P * * * *
-1 * * O * * *
-2 * * * * * O
-3 * * * * * *
-4 S S S * * *
-
-Search Destroy AI 2's Scanning Board
-  0 1 2 3 4 5
-0 * * * * * *
-1 * * O * * *
-2 * * * * * O
-3 * * * * * *
-4 * * * * * *
-
-Search Destroy AI 2's Board
-  0 1 2 3 4 5
-0 O * * P * *
-1 * * * P * *
-2 * * S * * *
-3 O O S * * *
-4 * * S * * *
-
-Miss
-Search Destroy AI 2's Scanning Board
-  0 1 2 3 4 5
-0 * * * * * *
-1 * * O * * *
-2 * O * * * O
-3 * * * * * *
-4 * * * * * *
-
-Search Destroy AI 2's Board
-  0 1 2 3 4 5
-0 O * * P * *
-1 * * * P * *
-2 * * S * * *
-3 O O S * * *
-4 * * S * * *
-
-Rick's Scanning Board
-  0 1 2 3 4 5
-0 O * * * * *
-1 * * * * * *
-2 * * * * * *
-3 O O * * * *
-4 * * * * * *
-
-Rick's Board
-  0 1 2 3 4 5
-0 P P * * * *
-1 * * O * * *
-2 * O * * * O
-3 * * * * * *
-4 S S S * * *
-
-Rick, enter the location you want to fire at in the form row, column: 2,2
-You hit Search Destroy AI 2's Submarine!
-Rick's Scanning Board
-  0 1 2 3 4 5
-0 O * * * * *
-1 * * * * * *
-2 * * X * * *
-3 O O * * * *
-4 * * * * * *
-
-Rick's Board
-  0 1 2 3 4 5
-0 P P * * * *
-1 * * O * * *
-2 * O * * * O
-3 * * * * * *
-4 S S S * * *
-
-Search Destroy AI 2's Scanning Board
-  0 1 2 3 4 5
-0 * * * * * *
-1 * * O * * *
-2 * O * * * O
-3 * * * * * *
-4 * * * * * *
-
-Search Destroy AI 2's Board
-  0 1 2 3 4 5
-0 O * * P * *
-1 * * * P * *
-2 * * X * * *
-3 O O S * * *
-4 * * S * * *
-
-Miss
-Search Destroy AI 2's Scanning Board
-  0 1 2 3 4 5
-0 * * * * * *
-1 * * O * * *
-2 * O O * * O
-3 * * * * * *
-4 * * * * * *
-
-Search Destroy AI 2's Board
-  0 1 2 3 4 5
-0 O * * P * *
-1 * * * P * *
-2 * * X * * *
-3 O O S * * *
-4 * * S * * *
-
-Rick's Scanning Board
-  0 1 2 3 4 5
-0 O * * * * *
-1 * * * * * *
-2 * * X * * *
-3 O O * * * *
-4 * * * * * *
-
-Rick's Board
-  0 1 2 3 4 5
-0 P P * * * *
-1 * * O * * *
-2 * O O * * O
-3 * * * * * *
-4 S S S * * *
-
-Rick, enter the location you want to fire at in the form row, column: 3,2
-You hit Search Destroy AI 2's Submarine!
-Rick's Scanning Board
-  0 1 2 3 4 5
-0 O * * * * *
-1 * * * * * *
-2 * * X * * *
-3 O O X * * *
-4 * * * * * *
-
-Rick's Board
-  0 1 2 3 4 5
-0 P P * * * *
-1 * * O * * *
-2 * O O * * O
-3 * * * * * *
-4 S S S * * *
-
-Search Destroy AI 2's Scanning Board
-  0 1 2 3 4 5
-0 * * * * * *
-1 * * O * * *
-2 * O O * * O
-3 * * * * * *
-4 * * * * * *
-
-Search Destroy AI 2's Board
-  0 1 2 3 4 5
-0 O * * P * *
-1 * * * P * *
-2 * * X * * *
-3 O O X * * *
-4 * * S * * *
-
-Miss
-Search Destroy AI 2's Scanning Board
-  0 1 2 3 4 5
-0 * * * * * *
-1 * * O * * *
-2 * O O * * O
-3 * * * * * O
-4 * * * * * *
-
-Search Destroy AI 2's Board
-  0 1 2 3 4 5
-0 O * * P * *
-1 * * * P * *
-2 * * X * * *
-3 O O X * * *
-4 * * S * * *
-
-Rick's Scanning Board
-  0 1 2 3 4 5
-0 O * * * * *
-1 * * * * * *
-2 * * X * * *
-3 O O X * * *
-4 * * * * * *
-
-Rick's Board
-  0 1 2 3 4 5
-0 P P * * * *
-1 * * O * * *
-2 * O O * * O
-3 * * * * * O
-4 S S S * * *
-
-Rick, enter the location you want to fire at in the form row, column: 4,2
-You hit Search Destroy AI 2's Submarine!
-You destroyed Search Destroy AI 2's Submarine
-Rick's Scanning Board
-  0 1 2 3 4 5
-0 O * * * * *
-1 * * * * * *
-2 * * X * * *
-3 O O X * * *
-4 * * X * * *
-
-Rick's Board
-  0 1 2 3 4 5
-0 P P * * * *
-1 * * O * * *
-2 * O O * * O
-3 * * * * * O
-4 S S S * * *
-
-Search Destroy AI 2's Scanning Board
-  0 1 2 3 4 5
-0 * * * * * *
-1 * * O * * *
-2 * O O * * O
-3 * * * * * O
-4 * * * * * *
-
-Search Destroy AI 2's Board
-  0 1 2 3 4 5
-0 O * * P * *
-1 * * * P * *
-2 * * X * * *
-3 O O X * * *
-4 * * X * * *
-
-You hit Rick's Patrol!
-Search Destroy AI 2's Scanning Board
-  0 1 2 3 4 5
-0 * X * * * *
-1 * * O * * *
-2 * O O * * O
-3 * * * * * O
-4 * * * * * *
-
-Search Destroy AI 2's Board
-  0 1 2 3 4 5
-0 O * * P * *
-1 * * * P * *
-2 * * X * * *
-3 O O X * * *
-4 * * X * * *
-
-Rick's Scanning Board
-  0 1 2 3 4 5
-0 O * * * * *
-1 * * * * * *
-2 * * X * * *
-3 O O X * * *
-4 * * X * * *
-
-Rick's Board
-  0 1 2 3 4 5
-0 P X * * * *
-1 * * O * * *
-2 * O O * * O
-3 * * * * * O
-4 S S S * * *
-
-Rick, enter the location you want to fire at in the form row, column: 0,3
-You hit Search Destroy AI 2's Patrol!
-Rick's Scanning Board
-  0 1 2 3 4 5
-0 O * * X * *
-1 * * * * * *
-2 * * X * * *
-3 O O X * * *
-4 * * X * * *
-
-Rick's Board
-  0 1 2 3 4 5
-0 P X * * * *
-1 * * O * * *
-2 * O O * * O
-3 * * * * * O
-4 S S S * * *
-
-Search Destroy AI 2's Scanning Board
-  0 1 2 3 4 5
-0 * X * * * *
-1 * * O * * *
-2 * O O * * O
-3 * * * * * O
-4 * * * * * *
-
-Search Destroy AI 2's Board
-  0 1 2 3 4 5
-0 O * * X * *
-1 * * * P * *
-2 * * X * * *
-3 O O X * * *
-4 * * X * * *
-
-You hit Rick's Patrol!
-You destroyed Rick's Patrol
-Search Destroy AI 2's Scanning Board
-  0 1 2 3 4 5
-0 X X * * * *
-1 * * O * * *
-2 * O O * * O
-3 * * * * * O
-4 * * * * * *
-
-Search Destroy AI 2's Board
-  0 1 2 3 4 5
-0 O * * X * *
-1 * * * P * *
-2 * * X * * *
-3 O O X * * *
-4 * * X * * *
-
-Rick's Scanning Board
-  0 1 2 3 4 5
-0 O * * X * *
-1 * * * * * *
-2 * * X * * *
-3 O O X * * *
-4 * * X * * *
-
-Rick's Board
-  0 1 2 3 4 5
-0 X X * * * *
-1 * * O * * *
-2 * O O * * O
-3 * * * * * O
-4 S S S * * *
-
-Rick, enter the location you want to fire at in the form row, column: 1,3
-You hit Search Destroy AI 2's Patrol!
-You destroyed Search Destroy AI 2's Patrol
-Rick's Scanning Board
-  0 1 2 3 4 5
-0 O * * X * *
-1 * * * X * *
-2 * * X * * *
-3 O O X * * *
-4 * * X * * *
-
-Rick's Board
-  0 1 2 3 4 5
-0 X X * * * *
-1 * * O * * *
-2 * O O * * O
-3 * * * * * O
-4 S S S * * *
-
-Rick won the game!
-
+Search Destroy AI 2's Board  
+  0 1 2 3 4 5  
+0 O * * X * *  
+1 * * * P * *  
+2 * * X * * *  
+3 O O X * * *  
+4 * * X * * *  
+  
+Rick's Scanning Board  
+  0 1 2 3 4 5  
+0 O * * X * *  
+1 * * * * * *  
+2 * * X * * *  
+3 O O X * * *  
+4 * * X * * *  
+  
+Rick's Board  
+  0 1 2 3 4 5  
+0 X X * * * *  
+1 * * O * * *  
+2 * O O * * O  
+3 * * * * * O  
+4 S S S * * *  
+  
+Rick, enter the location you want to fire at in the form row, column: 1,3  
+You hit Search Destroy AI 2's Patrol!  
+You destroyed Search Destroy AI 2's Patrol  
+Rick's Scanning Board  
+  0 1 2 3 4 5  
+0 O * * X * *  
+1 * * * X * *  
+2 * * X * * *  
+3 O O X * * *  
+4 * * X * * *  
+  
+Rick's Board  
+  0 1 2 3 4 5  
+0 X X * * * *  
+1 * * O * * *  
+2 * O O * * O  
+3 * * * * * O  
+4 S S S * * *  
+  
+Rick won the game!  
+  
+## Next Steps/Ideas
+* Despite the game working as it should and serving as a way to play BattleShip, it is by no means pretty, or ideal for playing a game against someone. Simply using print statements to display the board was the best that I could do given my exclusively backend-related knowledge, but creating a user-friendly frontend for this game is definitely a next step that I would like to take. All the game mechanics that exist in the backend can still be used, then I could simply take out the print statements and use something like Javascript a nicer frontend. Frontend programming is a skill that I plan hope to build within the near future. 
 ## Author
 
 * **William Schmidt** - [Wil's LikedIn](https://www.linkedin.com/in/william-schmidt-152431168/)
