@@ -35,15 +35,17 @@ Rick's Placement Board
 2 * * * * * *  
 3 * * * * * *  
 4 * * * * * *  
+  
 Rick enter horizontal or vertical for the orientation of Patrol which is 2 long: hor  
 Rick, enter the starting position for your Patrol ship ,which is 2 long, in the form row, column: 0,0  
 Rick's Placement Board  
-  0 1 2 3 4 5  
+    0 1 2 3 4 5  
 0 P P * * * *  
 1 * * * * * *  
 2 * * * * * *  
 3 * * * * * *  
 4 * * * * * *  
+  
 Rick enter horizontal or vertical for the orientation of Submarine which is 3 long: ver  
 Rick, enter the starting position for your Submarine ship ,which is 3 long, in the form row, column: 5,2  
 Cannot place Submarine vertically at 5, 2 because it would be out of bounds.  
