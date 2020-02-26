@@ -1,5 +1,5 @@
 # Human-vs-AI-BattleShip
-![Images](Images/battleship.jpg)
+![Images](Images/battleship_pic.jpg)
 #### Goal
 * Practice using classes, object oriented programing, and inheritance/multiple inheritance to solve a complex problem.
 
@@ -14,9 +14,9 @@
 * First, download the zip into a desired directory on your device
 * Next, the game configuration and random seed will be passed on the command line. To make them accessable to the program, you must use sys.argv and import the sys module. [This website](https://appdividend.com/2019/01/22/python-sys-argv-tutorial-command-line-arguments-example/) can be used to learn about how to use command line arguments. I will also explain below how to configure these arguments in PyCharm
   - First, to edit the command line argument in PyCharm click on your project and select Edit Configuration
-  ![Images](Images/battleship.jpg)
+  ![Images](Images/battle_pic_1.png)
   - Next, fill in the parameter fields with the command line parameters. Each parameter is separated by whitespace. If one of your parameters has whitespace enclose it in quotes
-  ![Images](Images/battleship.jpg)
+  ![Images](Images/battle_pic_2.png)
 * The only other required step is to open the main.py file, and run the program. Player 1 will then be prompted to select their player type as either human, random AI, cheating AI, or search and destory AI. Each player type is defined as follows:
   - Human: Simply used to define a human player. Human players will manually chose where to place their ships on the board at the start of the game, and they will manually chose where to fire at each turn.
   - Random AI: Places ships on board in randomly chosen locations at start of game. Guesses coordinates to fire at randomly. 
