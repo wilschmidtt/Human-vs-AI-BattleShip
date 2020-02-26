@@ -56,6 +56,7 @@ Rick's Placement Board
 2 * * * * * *  
 3 * * * * * *  
 4 S S S * * *  
+  
 Enter one of ['Human', 'CheatingAi', 'SearchDestroyAi', 'RandomAi'] for Player 2's type: search  
 Search Destroy AI 2's Placement Board  
   0 1 2 3 4 5  
@@ -64,6 +65,7 @@ Search Destroy AI 2's Placement Board
 2 * * * * * *  
 3 * * * * * *  
 4 * * * * * *  
+  
 Search Destroy AI 2's Placement Board  
   0 1 2 3 4 5  
 0 * * * P * *  
@@ -71,6 +73,7 @@ Search Destroy AI 2's Placement Board
 2 * * * * * *  
 3 * * * * * *  
 4 * * * * * *  
+  
 Search Destroy AI 2's Placement Board  
   0 1 2 3 4 5  
 0 * * * P * *  
@@ -78,6 +81,7 @@ Search Destroy AI 2's Placement Board
 2 * * S * * *  
 3 * * S * * *  
 4 * * S * * *  
+  
 Rick's Scanning Board  
   0 1 2 3 4 5  
 0 * * * * * *  
