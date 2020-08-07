@@ -1,5 +1,5 @@
 # Human-vs-AI-BattleShip
-![Images](Images/battleship_pic.jpg)
+
 #### Goal
 * Practice using classes, object oriented programing, and inheritance/multiple inheritance to solve a complex problem.
 
