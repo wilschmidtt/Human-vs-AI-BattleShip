@@ -1,8 +1,4 @@
 # Human-vs-AI-BattleShip
-
-#### Goal
-* Practice using classes, object oriented programing, and inheritance/multiple inheritance to solve a complex problem.
-
 ### Prerequisites
 * PyCharm (Recommended)
   - [Download PyCharm](https://www.jetbrains.com/pycharm/download/#section=windows)
@@ -593,7 +589,7 @@ Rick's Board
 Rick won the game!  
   
 ## Next Steps/Ideas
-* Despite the game working as it should and serving as a way to play BattleShip, it is by no means pretty, or ideal for playing a game against someone. Simply using print statements to display the board was the best that I could do given my exclusively backend-related knowledge, but creating a user-friendly frontend for this game is definitely a next step that I would like to take. All the game mechanics that exist in the backend can still be used, then I could simply take out the print statements and use something like Javascript a nicer frontend. Frontend programming is a skill that I plan hope to build within the near future. 
+* Despite the game working as it should and serving as a way to play BattleShip, it is by no means pretty, or ideal for playing a game against someone. Simply using print statements to display the board was the best that I could do given my exclusively backend-related knowledge, but creating a user-friendly frontend for this game is definitely a next step that I would like to take. All the game mechanics that exist in the backend can still be used, then I could simply take out the print statements and use something like Java for a nicer frontend.
 ## Author
 
 * **William Schmidt** - [Wil's LikedIn](https://www.linkedin.com/in/william-schmidt-152431168/)
