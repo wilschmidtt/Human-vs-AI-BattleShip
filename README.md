@@ -1,7 +1,5 @@
 # Human-vs-AI-BattleShip
 ### Prerequisites
-* PyCharm (Recommended)
-  - [Download PyCharm](https://www.jetbrains.com/pycharm/download/#section=windows)
 * Understanding for the game of BattleShip
   - If you have not played before, please play [this version](https://www.battleshiponline.org/) to gain familiarity with how the game works
 
