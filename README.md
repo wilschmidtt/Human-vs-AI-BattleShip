@@ -3,7 +3,7 @@
 * Understanding for the game of BattleShip
   - If you have not played before, please play [this version](https://www.battleshiponline.org/) to gain familiarity with how the game works
 
-## Running the tests
+## Running the Program
 
 * First, download the zip into a desired directory on your device
 * Next, the game configuration and random seed will be passed on the command line. To make them accessable to the program, you must use sys.argv and import the sys module. [This website](https://appdividend.com/2019/01/22/python-sys-argv-tutorial-command-line-arguments-example/) can be used to learn about how to use command line arguments. I will also explain below how to configure these arguments in PyCharm
